@@ -200,6 +200,11 @@ header .mobile {
     height: 20rem;
   }
 
+  #sign-up-cta {
+    margin: 0;
+    padding: 0;
+  }
+
   #sign-up-cta h1 {
     font-size: 2.25rem;
   }
@@ -207,6 +212,10 @@ header .mobile {
   #sign-up-cta h2 {
     font-size: 2rem;
   }
+
+  #sign-up-section {
+    background-position: right;
+    background-size: cover;
 }
 
 /* Features Section */
@@ -223,21 +232,17 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
-  height: 635px;
 }
 
 .feature .content {
   padding: 40px 0;
 }
 
-.feature .imnage-container {
+.feature .image-container {
   max-width: 100%;
-}
-
-.feature img {
   width: 90%;
   height: 65%;
-  margin: 32px;
+  margin: 0 auto;
 }
 
 .feature h2 {
@@ -355,22 +360,25 @@ header .mobile {
 }
 
 #quotes-section .quote {
+  display: inline-flex;
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
-  margin-right: 30px;
 }
 
 #quotes-section .quote-citation {
   height: 1.875rem;
-  display: block;
+  display: inline-block;
   margin: auto;
 }
 
-#quotes-section img {
+@media only screen and (max-width: 890px) {
+  #quotes-section .content {
+    display: inline-flex;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -388,6 +396,12 @@ header .mobile {
     padding-top: 1rem;
     margin: auto;
   }
+
+  @media only screen and (max-width: 450px) {
+    #quotes-section .content {
+      text-align: center;
+      flex-direction: column;
+    }
 }
 
 /* Footer */
